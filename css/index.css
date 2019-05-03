@@ -166,8 +166,9 @@ a {
 .top-nav {
   width: 100%;
   border-bottom: 1px solid #f1f1f1;
-  background: #f6f6f6;
+  background: rgba(246, 246, 246, 0.85);
   height: 100px;
+  position: fixed;
 }
 .top-nav .navigation-flexbox {
   max-width: 400px;
@@ -237,6 +238,7 @@ footer {
   padding: 0 15px;
 }
 .home img {
+  margin-top: 100px;
   border-radius: 5px;
   max-width: 100%;
   height: auto;
