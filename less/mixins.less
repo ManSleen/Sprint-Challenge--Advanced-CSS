@@ -1,1 +1,28 @@
-// Mixins Here
+.custom-button(@btn-bg-color, @btn-font-color) {
+  width: 30%;
+  padding: 8px 0;
+  border-radius: 5px;
+  background-color: @btn-bg-color;
+  letter-spacing: 0rem;
+  font-weight: bold;
+  color: @btn-font-color;
+  font-size: 1.8em;
+  text-align: center;
+
+  &:hover {
+    border: 1px solid @btn-bg-color;
+    background-color: white;
+    color: @btn-bg-color;
+  }
+}
+
+.flex-and-wrap() {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-and-dont-wrap() {
+  display: flex;
+  flex-wrap: nowrap;
+}

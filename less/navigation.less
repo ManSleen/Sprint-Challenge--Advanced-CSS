@@ -1,1 +1,58 @@
-// Navigation code here
+.top-nav {
+  width: 100%;
+  border-bottom: 1px solid @nav-border;
+  background: rgba(246, 246, 246, 0.85);
+  height: 100px;
+  position: fixed;
+
+  .navigation-flexbox {
+    max-width: 400px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    .flex-and-wrap();
+
+    @media @phone {
+      justify-content: space-around;
+    }
+
+    #logo {
+      padding: 0;
+      font-size: 3.9rem;
+      font-weight: bold;
+      font-family: "Russo One";
+      flex-basis: 100%;
+      text-align: center;
+      margin: 5px;
+
+      @media @phone {
+        flex-basis: 100%;
+        font-size: 3.9rem;
+        text-align: center;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: @nav-font;
+
+      &:hover {
+        color: red;
+      }
+    }
+
+    li {
+      width: auto;
+      margin: 0;
+      line-height: 1.5;
+      font-size: 1.6rem;
+      font-weight: bold;
+
+      @media @phone {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
