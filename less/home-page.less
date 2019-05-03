@@ -9,10 +9,12 @@
     p {
       padding: 0 15px;
     }
+    img {
+      margin-top: 100px;
+    }
   }
 
   img {
-    margin-top: 100px;
     border-radius: 5px;
     max-width: 100%;
     height: auto;
@@ -75,6 +77,7 @@
     padding-bottom: 40px;
     border-bottom: 1px solid @main-border-color;
     justify-content: center;
+    height: 60vh;
     .flex-and-wrap();
 
     @media @phone {
@@ -174,5 +177,63 @@
         border-radius: 10px;
       }
     }
+  }
+
+  .sign-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+    .sign-up-form {
+      width: 75%;
+      margin: 0 auto;
+      border-radius: 15px;
+      background-color: @waterloo;
+      padding: 20px;
+      h2 {
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+        margin: 15px 0;
+      }
+      label {
+        color: white;
+        font-size: 1.5rem;
+      }
+      @media @phone {
+        width: 90%;
+        h2 {
+        }
+      }
+    }
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    @media @phone {
+      width: 100%;
+    }
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
   }
 } // home
