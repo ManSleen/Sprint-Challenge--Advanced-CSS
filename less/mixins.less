@@ -9,8 +9,19 @@
   font-size: 1.8em;
   text-align: center;
   &:hover {
-    border: 1px solid red;
+    border: 1px solid @btn-bg-color;
     background-color: white;
-    color: red;
+    color: @btn-bg-color;
   }
+}
+
+.flex-and-wrap() {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-and-dont-wrap() {
+  display: flex;
+  flex-wrap: nowrap;
 }
