@@ -346,6 +346,7 @@ footer {
     height: 70px;
     line-height: 70px;
     order: 2;
+    margin-bottom: 15px;
   }
 }
 .home .walk .walk-img {
