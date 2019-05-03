@@ -65,6 +65,47 @@
     }
   }
 
+  .about {
+    margin-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid @main-border-color;
+    justify-content: center;
+    .flex-and-wrap();
+    @media @phone {
+      margin: 0;
+      padding: 15px;
+    }
+    .about-text {
+      width: 50%;
+      @media @phone {
+        padding-top: 30px;
+        width: 100%;
+        order: 2;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        padding: 0 15px 0 0;
+        margin-bottom: 26px;
+      }
+
+      .btn {
+        .custom-button(#22283a, #f1f1f1);
+        @media @phone {
+          padding: 0;
+          width: 100%;
+          height: 70px;
+          line-height: 70px;
+          order: 2;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
