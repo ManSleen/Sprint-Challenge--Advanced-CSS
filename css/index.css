@@ -238,11 +238,11 @@ footer {
 }
 .home img {
   border-radius: 5px;
+  max-width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 500px) {
   .home img {
-    max-width: 100%;
-    height: auto;
     border-radius: 0;
   }
 }
